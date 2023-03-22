@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo_6</title>
+</head>
+<body>
+    <script>
+      
+          let choix =0;
+            
+            do {
+                do {
+                    choix = parseInt(prompt("1:Solde de mes comptes\n2:Transfert d'argent\n3:Paiement de facture\n"));
+                    
+                } while (choix<1 || choix>3);
+                 
+                
+                switch (choix) {
+                case 1:
+                    do {
+                        choix = parseInt(prompt("1:Solde compte Orange money\n2:Mon salaire\n3:Reception Internationale\n4:Compteur KDO\n---\n0:prec"));
+                        if(choix==0){
+                            break;
+                        }
+
+                    } while (choix<1 || choix>4);
+                    switch (choix) {
+                        case 1:
+                            
+                            break;
+                    
+                        default:
+                            break;
+                    }
+                    
+                    
+                    break;
+                default:
+                    alert("merci de ressayer");
+                    break;
+                }
+            } while (choix==0);
+            
+       
+    </script>
+</body>
+</html>
